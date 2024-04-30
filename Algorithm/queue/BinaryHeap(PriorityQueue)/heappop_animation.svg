@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="250"
+	style="background-color: rgb(255, 255, 255);">
+
+	<!-- 左上角标题 -->
+	<g transform="translate(50 16)">
+		<rect x="-45" y="-15" width="92" height="30" fill="lightgreen" />
+		<text x="0" y="0" font-size="15" text-anchor="middle" dominant-baseline="middle">min heap
+			pop</text>
+	</g>
+
+	<!-- 所有树枝 -->
+	<g stroke="black" stroke-width="1">
+		<line x1="120" y1="60" x2="220" y2="30" />
+		<line x1="320" y1="60" x2="220" y2="30" />
+		<line x1="120" y1="60" x2="70" y2="100" />
+		<line x1="170" y1="100" x2="120" y2="60" />
+		<line x1="270" y1="100" x2="320" y2="60" />
+		<line x1="370" y1="100" x2="320" y2="60" />
+		<line x1="45" y1="150" x2="70" y2="100" />
+		<line x1="95" y1="150" x2="70" y2="100" />
+		<line x1="145" y1="150" x2="170" y2="100" />
+		<line x1="195" y1="150" x2="170" y2="100" />
+		<line x1="245" y1="150" x2="270" y2="100" />
+		<line x1="295" y1="150" x2="270" y2="100" />
+		<line x1="345" y1="150" x2="370" y2="100">
+			<set attributeName="visibility" to="hidden" begin="5s" />
+		</line>
+	</g>
+
+
+	<!-- 第一层节点 -->
+	<g transform="translate(220 30)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#B266FF" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">
+			0</text>
+
+		<set attributeName="visibility" to="hidden" begin="8s" />
+		<animateMotion path="M0,0 L-105,160" begin="2s" dur="1.5s" fill="freeze" />
+	</g>
+
+	<!-- 第二层节点 -->
+	<g transform="translate(120 60)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">3</text>
+	</g>
+	<g transform="translate(320 60)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">1</text>
+		<animateMotion path="M0,0 L-100,-30" begin="10s" dur="1s" fill="freeze" />
+	</g>
+
+	<!-- 第三层节点 -->
+	<g transform="translate(70 100)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">5</text>
+	</g>
+	<g transform="translate(170 100)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">6</text>
+	</g>
+	<g transform="translate(270 100)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">4</text>
+	</g>
+	<g transform="translate(370 100)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">2</text>
+		<animateMotion path="M0,0 L-50,-40" begin="12.5s" dur="1s" fill="freeze" />
+	</g>
+
+	<!-- 第四层节点 -->
+	<g transform="translate(45 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">9</text>
+	</g>
+	<g transform="translate(95 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">14</text>
+	</g>
+	<g transform="translate(145 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">11</text>
+	</g>
+	<g transform="translate(195 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">10</text>
+	</g>
+	<g transform="translate(245 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">15</text>
+	</g>
+	<g transform="translate(295 150)">
+		<circle r="15" fill="white" stroke="black" />
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">8</text>
+	</g>
+
+	<!-- 最后一个节点 -->
+	<g transform="translate(345 150)">
+		<circle id="c" r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="5s" />
+			<set attributeName="fill" to="white" begin="14.5s" />
+		</circle>
+		<text id="t" font-size="15" text-anchor="middle" dominant-baseline="middle">7</text>
+
+		<animateMotion path="M0,0 L-125,-120" begin="5s" dur="1.5s" fill="freeze" />
+		<animateMotion path="M-125,-120 L-25,-90" begin="10s" dur="1s" fill="freeze" />
+		<animateMotion path="M-25,-90 L25,-50" begin="12.5s" dur="1s" fill="freeze" />
+	</g>
+
+	<text x="210" y="220" text-anchor="middle" fill="#3333FF" font-size="15">
+		<set attributeName="visibility" to="hidden" begin="8s" />首先返回最小值(根节点),并将最后一个节点设置为新的根节点 </text>
+
+	<text x="210" y="220" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="8.2s" />若这个节点大于子节点，则bubble down(与smaller
+		child交换) <set attributeName="visibility" to="hidden" begin="14.5s" />
+	</text>
+
+</svg>
