@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="H_KzIprwaXjR-_fSG_8s" name="Page-1">
-        <mxGraphModel dx="3183" dy="2443" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="2190" dy="1910" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -907,7 +907,7 @@
                     <mxGeometry x="-725" y="1722" width="450" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="330" value="" style="line;strokeWidth=1;html=1;strokeColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-834" y="1772" width="830" height="10" as="geometry"/>
+                    <mxGeometry x="-841" y="2060" width="830" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="331" value="" style="line;strokeWidth=1;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-833" y="1629" width="830" height="10" as="geometry"/>
@@ -939,8 +939,38 @@
                 <mxCell id="352" value="数组满时的 head=tail 只是一个中间态" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#999999;" parent="1" vertex="1">
                     <mxGeometry x="-565" y="1247" width="266" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="353" value="deque 两侧都可以进行插入和删除，这里只展示了右侧插入，左侧删除" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#999999;" vertex="1" parent="1">
+                <mxCell id="353" value="deque 两侧都可以进行插入和删除，这里只展示了右侧插入，左侧删除" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#999999;" parent="1" vertex="1">
                     <mxGeometry x="-674.5" y="-1070" width="489" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="354" value="size&amp;nbsp; =" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-829" y="1830" width="79" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="355" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-751" y="1785" width="20" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="356" value="&amp;nbsp;&lt;font color=&quot;#7f00ff&quot;&gt;tail - head&lt;/font&gt;,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if tail &amp;gt;= head" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-753" y="1800" width="397" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="358" value="&lt;font color=&quot;#ff9933&quot;&gt;elements.length&lt;/font&gt; + &lt;font color=&quot;#7f00ff&quot;&gt;tail - head&lt;/font&gt;,&amp;nbsp; &amp;nbsp; if tail &amp;lt; head" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-752.5" y="1860" width="390" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="359" value="=" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-362" y="1830" width="59" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="361" value="(&lt;font color=&quot;#7f00ff&quot;&gt;tail - head&lt;/font&gt;) % &lt;font color=&quot;#ff9933&quot;&gt;elements.length&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-293" y="1830" width="241" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="362" value="=" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-362" y="1975" width="59" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="363" value="(&lt;font color=&quot;#7f00ff&quot;&gt;tail - head&lt;/font&gt;) &amp;amp; (&lt;font color=&quot;#ff9933&quot;&gt;elements.length &lt;/font&gt;- 1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-293" y="1975" width="273" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="364" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-189" y="1870" width="39" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="365" value="&lt;span style=&quot;caret-color: rgb(13, 13, 13); color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 16px; text-align: left;&quot;&gt;divisor为2^n时&lt;/span&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="-160" y="1900" width="120" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
