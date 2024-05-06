@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" style="background-color: rgb(255, 255, 255);">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260"
+	style="background-color: rgb(255, 255, 255);">
 
+	<!-- 左上角标题 -->
+	<g transform="translate(50 16)">
+		<rect x="-45" y="-15" width="92" height="30" fill="lightgreen" />
+		<text x="0" y="0" font-size="15" text-anchor="middle" dominant-baseline="middle">min-heap
+			push</text>
+	</g>
 	<!-- 所有的树枝 -->
 	<g stroke="black" stroke-width="1">
 		<!-- 第一层的树枝 -->

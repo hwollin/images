@@ -4,7 +4,7 @@
 	<!-- 左上角标题 -->
 	<g transform="translate(50 16)">
 		<rect x="-45" y="-15" width="92" height="30" fill="lightgreen" />
-		<text x="0" y="0" font-size="15" text-anchor="middle" dominant-baseline="middle">min heap
+		<text x="0" y="0" font-size="15" text-anchor="middle" dominant-baseline="middle">min-heap
 			pop</text>
 	</g>
 

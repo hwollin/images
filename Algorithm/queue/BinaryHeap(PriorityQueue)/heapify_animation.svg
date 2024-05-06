@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="250"
+	style="background-color: rgb(255, 255, 255);">
+
+	<!-- 左上角标题 -->
+	<g transform="translate(73 16)">
+		<rect x="-71" y="-15" width="144" height="30" fill="lightgreen" />
+		<text x="0" y="0" font-size="15" text-anchor="middle" dominant-baseline="middle">min-heap
+			heapify O(n)</text>
+	</g>
+
+	<!-- 所有树枝 -->
+	<g stroke="black" stroke-width="1">
+		<line x1="120" y1="60" x2="220" y2="30" />
+		<line x1="320" y1="60" x2="220" y2="30" />
+		<line x1="120" y1="60" x2="70" y2="100" />
+		<line x1="170" y1="100" x2="120" y2="60" />
+		<line x1="270" y1="100" x2="320" y2="60" />
+		<line x1="370" y1="100" x2="320" y2="60" />
+		<line x1="45" y1="150" x2="70" y2="100" />
+		<line x1="95" y1="150" x2="70" y2="100" />
+		<line x1="145" y1="150" x2="170" y2="100" />
+		<line x1="195" y1="150" x2="170" y2="100" />
+		<line x1="245" y1="150" x2="270" y2="100" />
+		<line x1="295" y1="150" x2="270" y2="100" />
+		<line x1="345" y1="150" x2="370" y2="100" />
+	</g>
+
+
+	<!-- 第一层节点 -->
+	<g transform="translate(220 30)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="26s"/>
+			<set attributeName="fill" to="#DAE8FC" begin="31s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">15</text>
+
+		<animateMotion path="M0,0 L100,30" begin="26.5s" dur="1.5s" fill="freeze" />
+		<animateMotion path="M100,30 L50,70" begin="28.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M50,70 L25,120" begin="30s" dur="1s" fill="freeze" />
+	</g>
+
+	<!-- 第二层节点 -->
+	<g transform="translate(120 60)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="22s"/>
+			<set attributeName="fill" to="#DAE8FC" begin="25s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">14</text>
+
+		<animateMotion path="M0,0 L50,40" begin="22.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M50,40 L25,90" begin="24s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(320 60)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="18s"/>
+			<set attributeName="fill" to="#DAE8FC" begin="21s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">11</text>
+
+		<animateMotion path="M0,0 L50,40" begin="18.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M50,40 L25,90" begin="20s" dur="1s" fill="freeze" />
+	</g>
+
+	<!-- 第三层节点 -->
+	<g transform="translate(70 100)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="15.5s"/>
+			<set attributeName="fill" to="#DAE8FC" begin="17s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">10</text>
+
+		<animateMotion path="M0,0 L25,50" begin="16s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(170 100)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="13s" />
+			<set attributeName="fill" to="#DAE8FC" begin="14.5s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">9</text>
+
+		<animateMotion path="M0,0 L25,50" begin="13.5s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(270 100)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="10.5s" />
+			<set attributeName="fill" to="#DAE8FC" begin="12s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">8</text>
+
+		<animateMotion path="M0,0 L25,50" begin="11s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(370 100)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#FFB366" begin="8s" />
+			<set attributeName="fill" to="#DAE8FC" begin="9.5s"/>
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">7</text>
+
+		<animateMotion path="M0,0 L-25,50" begin="8.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M-25,50 L-0,0" begin="20s" dur="1s" fill="freeze" />
+	</g>
+
+	<!-- 第四层节点 -->
+	<g transform="translate(45 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">6</text>
+	</g>
+	<g transform="translate(95 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">5</text>
+
+		<animateMotion path="M0,0 L-25,-50" begin="16s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(145 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">4</text>
+
+		<animateMotion path="M0,0 L25,-50" begin="24s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(195 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">3</text>
+
+		<animateMotion path="M0,0 L-25,-50" begin="13.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M-25,-50 L-75,-90" begin="22.5s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(245 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">2</text>
+
+		<animateMotion path="M0,0 L25,-50" begin="30s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(295 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">1</text>
+
+		<animateMotion path="M0,0 L-25,-50" begin="11s" dur="1s" fill="freeze" />
+		<animateMotion path="M-25,-50 L25,-90" begin="28.5s" dur="1s" fill="freeze" />
+	</g>
+	<g transform="translate(345 150)">
+		<circle r="15" fill="white" stroke="black">
+			<set attributeName="fill" to="#DAE8FC" begin="2s" />
+		</circle>
+		<text font-size="15" text-anchor="middle" dominant-baseline="middle">0</text>
+
+		<animateMotion path="M0,0 L25,-50" begin="8.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M25,-50 L-25,-90" begin="18.5s" dur="1s" fill="freeze" />
+		<animateMotion path="M-25,-90 L-125,-120" begin="26.5s" dur="1.5s" fill="freeze" />
+	</g>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="2s" />
+		<set attributeName="visibility" to="hidden" begin="5s" />
+		所有的叶子结点都是一个min-heap
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="5s" />
+		<set attributeName="visibility" to="hidden" begin="8s" />
+		从最后一个非叶子结点依次向前调整堆结构(bubble down)
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="9.5s" />
+		<set attributeName="visibility" to="hidden" begin="10.5s" />
+		节点7调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="12s" />
+		<set attributeName="visibility" to="hidden" begin="12.5s" />
+		节点8调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="14.5s" />
+		<set attributeName="visibility" to="hidden" begin="15s" />
+		节点9调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="17s" />
+		<set attributeName="visibility" to="hidden" begin="17.5s" />
+		节点10调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="21s" />
+		<set attributeName="visibility" to="hidden" begin="21.5s" />
+		节点11调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="25s" />
+		<set attributeName="visibility" to="hidden" begin="25.5s" />
+		节点14调整完毕
+	</text>
+
+	<text x="210" y="210" text-anchor="middle" fill="#3333FF" font-size="15" visibility="hidden">
+		<set attributeName="visibility" to="visible" begin="31s" />
+		<set attributeName="visibility" to="hidden" begin="33s" />
+		节点15调整完毕, 整个堆调整完毕
+	</text>
+
+</svg>
