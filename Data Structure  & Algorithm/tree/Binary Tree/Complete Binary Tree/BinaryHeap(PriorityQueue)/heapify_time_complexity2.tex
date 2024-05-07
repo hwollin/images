@@ -1,0 +1,10 @@
+\begin{aligned}
+    \text{整体时间复杂度为：}& \sum_{h=0}^{\log_{2}{n}} h \cdot \frac{n}{2^{h+1}} < \frac{n}{2} \cdot \sum_{h=0}^{\infty} \frac{h}{2^{h}} \\
+    \\
+    \text{令 } S = \sum_{h=0}^{\infty} \frac{h}{2^{h}} &= 0 + \frac{1}{2} + \frac{2}{4} + \frac{3}{8} + \frac{4}{16} + \ldots \quad \text{(1)}\\
+    \text{则 } \frac{1}{2} S &= \qquad \, 0 + \frac{1}{4} + \frac{2}{8} + \frac{3}{16} + \frac{4}{32} + \ldots \quad \text{(2)}\\
+    \text{(1) - (2)得：} \frac{1}{2} S &= 0 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \ldots = 1 \\
+    \therefore S &= 2 \\
+    \\
+    \therefore \sum_{h=0}^{\log_{2}{n}} h \cdot \frac{n}{2^{h+1}} &< \frac{n}{2} \cdot \sum_{h=0}^{\infty} \frac{h}{2^{h}} = \frac{n}{2} \cdot 2 = n
+\end{aligned}
